@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="..">
+        <meta charset="utf-8">
+        <title>Progress | tex✩ugo's Drag Race Wiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#de5010">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <main>
+            <h1><i class="fa-solid fa-crown"></i> Progress</h1>
+
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>alien</td>
+                            <td class="high"><i class="fa-solid fa-arrow-up"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>bruno</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td class="win"><i class="fa-solid fa-crown"></i></td>
+                        </tr>
+                        <tr>
+                            <td>desousa</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>dio</td>
+                            <td class="low"><i class="fa-solid fa-arrow-down"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>henrique</td>
+                            <td class="win"><i class="fa-solid fa-crown"></i></td>
+                            <td class="high"><i class="fa-solid fa-arrow-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td>jaia</td>
+                            <td class="high"><i class="fa-solid fa-arrow-up"></i></td>
+                            <td class="btm"><i class="fa-solid fa-fire"></i></td>
+                        </tr>
+                        <tr>
+                            <td>junio</td>
+                            <td class="mini"><i class="fa-solid fa-medal"></i></td>
+                            <td class="low"><i class="fa-solid fa-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td>luís</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td class="high"><i class="fa-solid fa-arrow-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td>márcio</td>
+                            <td class="high"><i class="fa-solid fa-arrow-up"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>simon</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td class="high"><i class="fa-solid fa-arrow-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td>thomas</td>
+                            <td class="low"><i class="fa-solid fa-arrow-down"></i></td>
+                            <td class="low"><i class="fa-solid fa-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td>ugo</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td class="mini"><i class="fa-solid fa-medal"></i></td>
+                        </tr>
+                        <tr>
+                            <td>uwu</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>espama</td>
+                            <td class="btm"><i class="fa-solid fa-fire"></i></td>
+                            <td class="elim"><i class="fa-solid fa-skull"></i></td>
+                        </tr>
+                        <tr>
+                            <td>rafa</td>
+                            <td class="elim"><i class="fa-solid fa-skull"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <div class="legend">
+                    <span>Legend</span>
+                    <table>
+                        <tr>
+                            <td class="win"><i class="fa-solid fa-crown"></i></td>
+                            <td class="win">Win</td>
+                        </tr>
+                        <tr>
+                            <td class="high"><i class="fa-solid fa-arrow-up"></i></td>
+                            <td class="high">High</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td>Safe</td>
+                        <tr>
+                            <td class="low"><i class="fa-solid fa-arrow-down"></i></td>
+                            <td class="low">Low</td>
+                        </tr>
+                        <tr>
+                            <td class="btm"><i class="fa-solid fa-fire"></i></td>
+                            <td class="btm">Bottom</td>
+                        </tr>
+                        <tr>
+                            <td class="elim"><i class="fa-solid fa-skull"></i></td>
+                            <td class="elim">Eliminated</td>
+                        </tr>
+                        <tr>
+                            <td class="mini"><i class="fa-solid fa-medal"></i></td>
+                            <td class="mini">Mini</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <style>
+
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 25px;
+            }
+
+            td:first-child { text-align: right; font-weight: bold }
+
+            td.win  { background-color: #4472c4; color: #fff }
+            td.high { background-color: #d9e1f2 }
+            td.low  { background-color: #ffe7e7 }
+            td.btm  { background-color: #ff6565 }
+            td.elim { background-color: #c45644 }
+            td.mini { background-color: #f3db15 }
+
+            .legend {
+                padding: 15px;
+                background-color: #e8e8e8;
+                border-radius: 10px;
+                border: 1px solid #ddd;
+            }
+
+            .legend span {
+                display: block;
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+            .legend table {
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            .legend td:last-child { text-align: left }
+
+        </style>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

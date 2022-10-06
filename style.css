@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css');
+
+html, body { height: 100% }
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ddd;
+}
+
+:root { --color: #de5010 }
+
+header {
+
+    position: sticky;
+    top: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+    padding: 15px;
+    background-color: var(--color);
+    box-shadow: 0 0 25px #0003;
+
+}
+
+header .home img {
+    height: 30px;
+    border-radius: 5px;
+}
+
+header nav {
+    display: flex;
+    gap: 5px;
+}
+
+header nav a {
+    color: #fffa;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+header nav a:hover,
+header nav a.active {
+    color: #fff;
+    background-color: #fff3;
+}
+
+@media (max-width: 600px) {
+
+    header nav {
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+    
+    header nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .6em;
+    }
+
+    header nav a i {
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+    
+}
+
+main {
+    background-color: #eee;
+    padding: 25px calc(50% - 400px)
+}
+
+h1 { margin: 0 0 15px 0 }
+h2 { margin: 0 0 5px 0 }
+
+h1 i { color: var(--color) }
+
+table { border-collapse: collapse }
+table, th, td { border: 1px solid #ddd }
+th, td { padding: 5px }
+th { background-color: #e8e8e8 }
+td { text-align: center }
+
+@media (max-width: 850px) {
+    
+    main { padding: 25px }
+    
+}
+
+footer {
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+    color: #888;
+}
+footer > :not(.socials) { flex: 1 1 0 }
+
+footer a { color: #666 }
+
+footer .socials {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5em;
+}
+footer .socials a { text-decoration: none }
+
+@media (max-width: 600px) {
+    
+    footer { flex-direction: column }
+    
+}
