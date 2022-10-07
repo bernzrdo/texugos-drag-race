@@ -5,10 +5,10 @@ $('body').prepend(/*html*/`
             <img src="img/logo.png" alt="tex✩ugo's Drag Race Wiki">
         </a>
         <nav>
-            <a href="contestants" ${ location.pathname.startsWith('/contestants/') ? 'class="active"' : '' } ><i class="fa-solid fa-users"></i> Contestants</a>
-            <a href="progress"    ${ location.pathname.startsWith('/progress/')    ? 'class="active"' : '' } ><i class="fa-solid fa-crown"></i> Progress</a>
-            <a href="lip-syncs"   ${ location.pathname.startsWith('/lip-syncs/')   ? 'class="active"' : '' } ><i class="fa-solid fa-microphone-stand"></i> Lip Syncs</a>
-            <a href="episodes"    ${ location.pathname.startsWith('/episodes/')    ? 'class="active"' : '' } ><i class="fa-solid fa-tv-retro"></i> Episodes</a>
+            <a href="contestants" ${ location.pathname.includes('/contestants/') ? 'class="active"' : '' } ><i class="fa-solid fa-users"></i> Contestants</a>
+            <a href="progress"    ${ location.pathname.includes('/progress/')    ? 'class="active"' : '' } ><i class="fa-solid fa-crown"></i> Progress</a>
+            <a href="lip-syncs"   ${ location.pathname.includes('/lip-syncs/')   ? 'class="active"' : '' } ><i class="fa-solid fa-microphone-stand"></i> Lip Syncs</a>
+            <a href="episodes"    ${ location.pathname.includes('/episodes/')    ? 'class="active"' : '' } ><i class="fa-solid fa-tv-retro"></i> Episodes</a>
         </nav>
     </header>
 `);
